@@ -13,12 +13,6 @@
 #include "Shark.h"
 
 int main(){
-    Mammal* m = new Mammal;
-    std::cout << std::endl;
-    Aquatic* aq = new Aquatic;
-    std::cout << std::endl;
-    Aerial* ae = new Aerial;
-    std::cout << std::endl;
     Dog* d = new Dog;
     std::cout << std::endl;
     Cat* c = new Cat(4);
@@ -38,21 +32,18 @@ int main(){
     Shark* s = new Shark;
     std::cout << std::endl;
 
-    Animal* arr[20];
-    arr[0] = m;
-    arr[1] = aq;
-    arr[2] = ae;
-    arr[3] = d;
-    arr[4] = c;
-    arr[5] = l;
-    arr[6] = e;
-    arr[7] = o;
-    arr[8] = h;
-    arr[9] = f;
-    arr[10] = w;
-    arr[11] = s;
+    Animal* arr[10];
+    arr[0] = d;
+    arr[1] = c;
+    arr[2] = l;
+    arr[3] = e;
+    arr[4] = o;
+    arr[5] = h;
+    arr[6] = f;
+    arr[7] = w;
+    arr[8] = s;
 
-    for (int i = 0; i < 12; i++){
+    for (int i = 0; i < 9; i++){
         std::cout << std::endl;
         delete arr[i];
     }

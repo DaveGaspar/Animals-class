@@ -7,8 +7,8 @@ class Animal{
     protected:
         int dna_size;
         std::string* p_dna;
-        virtual void voice();
-        virtual void move();
+        virtual void voice() = 0;
+        virtual void move() = 0;
         void breath();
         void eat();
         void reproduce();

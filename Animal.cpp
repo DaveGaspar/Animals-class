@@ -1,11 +1,5 @@
 #include "Animal.h"
 
-void Animal::voice(){
-    std::cout << "I'm an animal" << std::endl;
-}
-void Animal::move(){
-    std::cout << "I can move" << std::endl;
-}
 void Animal::breath(){
     std::cout << "Call func breath" << std::endl;
 }
@@ -20,14 +14,12 @@ Animal::Animal(){
     dna_size = 5;
     p_dna = new std::string[dna_size];
     breath();
-    voice();
 }
 
 Animal::Animal(int size){
     dna_size = size;
     p_dna = new std::string[dna_size];
     breath();
-    voice();
 }
 
 Animal::Animal (const Animal& obj){
